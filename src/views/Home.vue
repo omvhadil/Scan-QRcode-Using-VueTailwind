@@ -19,6 +19,9 @@ import { useCounterStore } from '../stores/counter'
         </div>
       </div>
     </div>
+    <p class="absolute bottom-4 text-gray-500">
+      from <span class="font-bold text-teal-500">Alabim</span>
+    </p>
   </div>
 </template>
 
