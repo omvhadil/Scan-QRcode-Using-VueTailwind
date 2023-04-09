@@ -22,10 +22,10 @@ function onDecode(data) {
       <qr-stream @decode="onDecode" class="frame" :torch="data.flesh">
         <div style="color: red" class="frame"></div>
       </qr-stream>
-      <h6 class="text-red-500 text-center mt-2">Silahkan Scan QRcode</h6>
-      <div>
-        <button @click="data.flesh = !data.flesh" class="py-2 px-4 text-white bg-green-400">
-          Flesh
+      <div class="text-center mt-4">
+        <h6 class="text-teal-500">Silahkan Scan QRcode</h6>
+        <button @click="data.flesh = !data.flesh" class="py-2 px-4 text-white text-2xl mt-4">
+          <i :class="data.flesh ? 'ri-flashlight-fill' : 'ri-flashlight-line'"></i>
         </button>
       </div>
     </div>
