@@ -5,14 +5,14 @@ import { RouterLink } from 'vue-router'
 </script>
 <template>
   <div class="h-[100vh] w-full pl-6 pr-6">
-    <div class="home_content mt-16 bg-gray-300 p-3 text-center rounded-md mb-32">
+    <div class="home_content mt-16 bg-gray-300 p-3 text-center rounded-md mb-28">
       <h5 class="text-xl font-bold mb-2">Scan QR Code</h5>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro doloribus, adipisci earum
         tempore.
       </p>
     </div>
-    <div class="home_image w-[70%] mx-auto mb-32">
+    <div class="home_image w-[70%] mx-auto mb-28">
       <img src="../assets/home-image.png" style="width: 100%; height: auto" />
     </div>
     <RouterLink to="/scan">

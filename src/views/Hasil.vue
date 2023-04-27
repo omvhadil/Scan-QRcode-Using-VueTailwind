@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 import { useRouter } from 'vue-router'
+import { useCounterStore } from '../stores/counter'
 
 const router = useRouter()
 </script>
@@ -19,11 +20,11 @@ const router = useRouter()
     </div>
   </header>
   <div class="container h-[70vh] p-6">
-    <p>jhafjsadlf</p>
+    <p>{{ useCounterStore.data }}</p>
   </div>
   <button
     @click="router.push('/scan')"
-    class="block mx-auto py-4 px-8 border-2 border-blue-500 rounded-lg text-blue-500 text-semibold"
+    class="block mx-auto py-4 px-8 border-2 border-blue-500 rounded-lg text-blue-500"
   >
     Scan QR Code Lagi
   </button>
