@@ -1,4 +1,6 @@
 <script setup></script>
 <template>
-  <RouterView />
+  <div class="containerx">
+    <RouterView />
+  </div>
 </template>

@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.containerx{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.line_frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: line_frame 5s ease-in-out infinite;
+}
+.text_scan{
+    animation: text_scan 1s ease-in-out infinite;
+}
+
+@keyframes line_frame {
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: 100%;
+    }
+}
+
+@keyframes text_scan {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
